@@ -1,0 +1,24 @@
+Nested Cross-Validation Comparison
+=================================================================
+Metric                                   Random Forest Decision Tree
+-----------------------------------------------------------------
+Inner best_score_ (mean across 5 folds)        0.4989       0.4781
+Outer nested CV score (mean across 5 folds)       0.5011       0.4781
+Gap (inner - outer)                           -0.0021      -0.0000
+=================================================================
+
+Per-fold breakdown — Random Forest
+---------------------------------------------
+  fold 1: inner=0.5073  outer=0.4910  gap=0.0163
+  fold 2: inner=0.4899  outer=0.5434  gap=-0.0535
+  fold 3: inner=0.5121  outer=0.4773  gap=0.0348
+  fold 4: inner=0.5038  outer=0.4603  gap=0.0435
+  fold 5: inner=0.4816  outer=0.5333  gap=-0.0517
+
+Per-fold breakdown — Decision Tree
+---------------------------------------------
+  fold 1: inner=0.4758  outer=0.4815  gap=-0.0056
+  fold 2: inner=0.4690  outer=0.5042  gap=-0.0352
+  fold 3: inner=0.5018  outer=0.4329  gap=0.0690
+  fold 4: inner=0.4890  outer=0.4495  gap=0.0395
+  fold 5: inner=0.4551  outer=0.5227  gap=-0.0676
